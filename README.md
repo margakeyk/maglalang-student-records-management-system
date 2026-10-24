@@ -6,11 +6,13 @@ This is a student project, not an official PUP system.
 
 ## Setup
 
-1. Copy the `student-records-management-system` folder into `C:\xampp\htdocs`.
-2. Start Apache and MySQL from the XAMPP Control Panel.
-3. Open http://localhost/phpmyadmin and import `database.sql`.
-4. If needed, update your database username, password, and port in `db.php`.
-5. Open http://localhost/student-records/ in your browser.
+1. Click Code → Download ZIP on this GitHub repository.
+2. Extract the ZIP and rename the extracted project folder to student-records-management-system.
+3. Move the folder into C:\xampp\htdocs.
+4. Start Apache and MySQL in the XAMPP Control Panel.
+5. Open http://localhost/phpmyadmin and import database.sql.
+6. Update the database settings in db.php if needed.
+7. Open http://localhost/student-records-management-system/ in your browser.
 
 Use PHP 7.4 or later with mysqli and mbstring enabled (standard XAMPP
 installations include these). The SQL works with MySQL and XAMPP's MariaDB.
@@ -34,7 +36,7 @@ credentials from your old config.php into the new db.php.
 | footer.php | Footer and closing HTML tags |
 | security.php | Small session/token check for submitted forms |
 | database.sql | Creates the database and students table |
-| assets/style.css | Page colors, table, buttons, and form styling |
+| style.css | Page colors, table, buttons, and form styling |
 
 ## How the backend works
 
