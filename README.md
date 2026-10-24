@@ -6,7 +6,7 @@ This is a student project, not an official PUP system.
 
 ## Setup
 
-1. Copy the `student-records` folder into `C:\xampp\htdocs`.
+1. Copy the `student-records-management-system` folder into `C:\xampp\htdocs`.
 2. Start Apache and MySQL from the XAMPP Control Panel.
 3. Open http://localhost/phpmyadmin and import `database.sql`.
 4. If needed, update your database username, password, and port in `db.php`.
@@ -86,4 +86,4 @@ access can manage records. Keep it local. The list is intended for small dataset
 If the database connection fails, check that MySQL is running, database.sql
 has been imported, and the settings in db.php match your local setup.
 If Apache uses a custom port, include it in the URL, such as
-http://localhost:8080/student-records/.
+http://localhost:8080/student-records-management-system/.
