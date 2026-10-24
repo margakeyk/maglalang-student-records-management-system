@@ -1,0 +1,16 @@
+-- Import this file through phpMyAdmin. Existing records are preserved.
+CREATE DATABASE IF NOT EXISTS student_records
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE student_records;
+
+CREATE TABLE IF NOT EXISTS students (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  student_number VARCHAR(30) NOT NULL UNIQUE,
+  first_name VARCHAR(80) NOT NULL,
+  last_name VARCHAR(80) NOT NULL,
+  email VARCHAR(120) NOT NULL,
+  course VARCHAR(120) NOT NULL,
+  year_level TINYINT UNSIGNED NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
